@@ -790,6 +790,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   width: 100%;
   min-height: 30vh;
@@ -829,7 +830,7 @@ section,
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
   }
