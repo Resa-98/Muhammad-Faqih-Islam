@@ -856,6 +856,10 @@ section,
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
+.img-fluid {
+  object-fit: cover;
+}
+
 .gallery .gallery-item {
   position: relative;
   overflow: hidden;
