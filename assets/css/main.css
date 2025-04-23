@@ -15,13 +15,13 @@
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Permanent MArker", cursive, sans-serif;
+  --heading-font: "noto", sans-serif;
   --nav-font: "Inter", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #436b5b; /* Background color for the entire website, including individual sections */
+  --background-color: #d98f0e; /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #f3ce57; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -95,12 +95,20 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
 }
-.sitename {
+h1.sitename {
+  font-family: "Permanent Marker", cursive;
   font-weight: 400;
-  text-shadow: 2px 2px 2px black;
+  font-style: normal;
+  margin-left: 30px;
+  text-shadow: 3px 2px 2px rgb(60, 0, 255);
+}
+.sitename span {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  text-shadow: 0px 2px #a6e3ff;
+  color: rgb(255, 134, 231);
 }
 
 /* PHP Email Form Messages
@@ -160,11 +168,11 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
+  background-color: rgb(79, 69, 37, 0.75);
+  padding: 6px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid var(--background-color);
+  border-bottom: 3px solid white;
 }
 
 .header .logo {
@@ -180,7 +188,7 @@ h6 {
   font-size: 32px;
   margin: 0;
   font-weight: 400;
-  color: var(--heading-color);
+  color: rgb(170, 238, 255);
 }
 
 .header .logo i {
