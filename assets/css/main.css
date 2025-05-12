@@ -414,7 +414,7 @@ h1.sitename {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
   border-top: 1px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
   color: var(--default-color);
@@ -612,7 +612,6 @@ h1.sitename {
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
-  background-color: var(--background-color);
   position: relative;
 }
 
@@ -621,8 +620,33 @@ h1.sitename {
   border-top: 1px solid
     color-mix(in srgb, var(--default-color), transparent 90%);
 }
+.galeri-hero {
+  color: var(--default-color);
+  background-image: url("../img/gallery/galeri-hero.jpg");
+  background-size: 580px;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+  z-index: 1;
+  position: relative;
+}
 
-.page-title .heading h1 {
+.hero {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.galeri-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Lapisan gelap agar teks terlihat */
+  z-index: -1;
+}
+. .page-title .heading h1 {
   font-size: 64px;
   font-weight: 400;
 }
@@ -1377,4 +1401,36 @@ section,
   text-align: center;
   margin-bottom: 40px;
   color: blue;
+}
+
+/* tentangku */
+
+.line-about {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin: 20px auto;
+  border: 1px solid #000000;
+}
+
+.kisah {
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 2rem;
+  background: #fff8f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Baloo 2", sans-serif;
+}
+h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 2rem;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #444;
 }
